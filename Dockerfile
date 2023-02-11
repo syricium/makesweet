@@ -42,6 +42,9 @@ RUN \
   cmake -DUSE_OPENCV=ON -DUSE_DETAIL=ON -DYARP_DIR=/tmp/yarp ..; \
   make VERBOSE=1
 
+RUN mkdir -p /share/templates
+RUN mkdir -p /share/content
+
 RUN \
   echo "#!/bin/bash" > /reanimator; \
   echo "cd /share" >> /reanimator; \
