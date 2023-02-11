@@ -3,7 +3,7 @@ Put pictures into animations from the command line.
 Do note that the output animations still get put into the same folder the input files are.
 
 ```
-docker run -v $PWD/templates:/share/templates -v $PWD/content:/share paulfitz/makesweet \
+docker run -v $PWD/templates:/share/templates -v $PWD/content:/share jottew/makesweet \
   --zip templates/billboard-cityscape.zip \
   --in images/frog.jpg \
   --gif animation.gif
@@ -13,7 +13,7 @@ docker run -v $PWD/templates:/share/templates -v $PWD/content:/share paulfitz/ma
 ![animation](https://user-images.githubusercontent.com/118367/39386216-8f26a80e-4a41-11e8-8ae0-0d44a5a55af1.gif)
 
 ```
-docker run -v $PWD/templates:/share/templates -v $PWD/content:/share paulfitz/makesweet \
+docker run -v $PWD/templates:/share/templates -v $PWD/content:/share jottew/makesweet \
   --zip templates/heart-locket.zip \
   --start 15 \
   --in images/frog.jpg images/monkey.jpg \
@@ -24,7 +24,7 @@ docker run -v $PWD/templates:/share/templates -v $PWD/content:/share paulfitz/ma
 ![frog_monkey_friends](https://user-images.githubusercontent.com/118367/44931507-d8f80080-ad2f-11e8-8804-23cb60b99906.gif)
 
 ```
-docker run -v $PWD/templates:/share/templates -v $PWD/content:/share paulfitz/makesweet \
+docker run -v $PWD/templates:/share/templates -v $PWD/content:/share jottew/makesweet \
   --zip templates/flag.zip \
   --in images/dolphin.jpg \
   --gif animation.gif
